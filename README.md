@@ -1,2 +1,2 @@
-# react-portfolio
-A React portfolio application that's deployed to Netlify
+# REACT: React portfolio
+A React portfolio application built with Vite and deployed to Netlify.
