@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useColorScheme } from '@mui/joy/styles';
 import IconButton from '@mui/joy/IconButton';
-import LightModeIcon from '../LightModeIcon/';
-import DarkModeIcon from '../DarkModeIcon/'; 
+import LightModeIcon from '../icons/LightModeIcon';
+import DarkModeIcon from '../icons/DarkModeIcon'; 
 
 function ModeToggle() {
     const { mode, setMode } = useColorScheme();

@@ -155,7 +155,7 @@ function ContactForm() {
                     )}
                 </FormControl>
 
-                <Button type="submit">Log in</Button>
+                <Button type="submit">Send it</Button>
             </form>
             <Modal
                 variant="plain"
