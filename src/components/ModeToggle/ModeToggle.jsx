@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { useColorScheme } from '@mui/joy/styles';
-import Button from '@mui/joy/Button';
+import IconButton from '@mui/joy/IconButton';
+import LightModeIcon from '../LightModeIcon/';
+import DarkModeIcon from '../DarkModeIcon/'; 
 
 function ModeToggle() {
     const { mode, setMode } = useColorScheme();
@@ -11,19 +13,20 @@ function ModeToggle() {
     React.useEffect(() => {
         setMounted(true);
     }, []);
+
     if (!mounted) {
         return null;
     }
 
     return (
-        <Button
-            variant="soft"
+        <IconButton
+            variant="plain"
             onClick={() => {
                 setMode(mode === 'light' ? 'dark' : 'light');
             }}
         >
-            {mode === 'light' ? 'Turn dark' : 'Turn light'}
-        </Button>
+            {mode === 'light' ? <DarkModeIcon /> : <LightModeIcon />}
+        </IconButton>
     );
 }
 
