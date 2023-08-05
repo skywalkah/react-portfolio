@@ -1,15 +1,13 @@
 import { CssVarsProvider } from '@mui/joy/styles';
-import ModeToggle from './components/ModeToggle/';
-import ContactForm from './components/ContactForm/';
+import Header from './components/Header';
+import { Outlet } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
     <CssVarsProvider>
-      <main>
-        <ModeToggle />
-        <ContactForm />
-      </main>
+      <Header />
+      <Outlet />
     </CssVarsProvider>
   );
 }
