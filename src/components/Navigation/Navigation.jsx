@@ -1,6 +1,7 @@
 import { Link as RouterLink } from "react-router-dom";
 import Link from '@mui/joy/Link';
 import ModeToggle from '../ModeToggle';
+import styles from './Navigation.module.css';
 
 function Navigation() {
     const links = [
@@ -11,12 +12,12 @@ function Navigation() {
     ];
 
     return (
-        <nav className="navbar">
-            <ul className="navbar-nav">
+        <nav className={styles.navbar}>
+            <ul className={styles.navbarNav}>
                 {links.map((link, index) => (
                     <li key={index}>
                         <Link
-                            className="nav-link text-light"
+                            className={`${styles.navLink} ${styles.textLight}`}
                             component={RouterLink}
                             to={link.to}
                         >
