@@ -1,12 +1,20 @@
 import Typography from '@mui/joy/Typography';
+import { motion } from 'framer-motion';
 
 export default function AboutPage() {
     return (
-        <Typography
-            level="h1"
-            variant="plain"
+        <motion.div 
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1, transition: { delay: 0.3 }}} 
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
         >
-            About me
-        </Typography>
+            <Typography
+                level="h1"
+                variant="plain"
+            >
+                About me
+            </Typography>
+        </motion.div>
     );
 }
