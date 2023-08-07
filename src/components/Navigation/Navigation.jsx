@@ -34,7 +34,7 @@ function Navigation() {
                     component={RouterLink}
                     to='/'
                 >
-                    <HomeIcon />
+                    <HomeIcon className={currentPage !== '/' ? styles.notActive : ''} />
                 </Link>
             </IconButton>
 

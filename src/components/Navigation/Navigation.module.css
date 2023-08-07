@@ -2,7 +2,12 @@
     & .active {
         outline: 1px solid #FA4B00;
     }
+    & .notActive path {
+        outline: none;
+        fill: #FA4B00;
+    }
 }
+
 
 .navbar {
     display: flex;

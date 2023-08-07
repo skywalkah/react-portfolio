@@ -19,6 +19,15 @@ export default function HomePage() {
                 paddingBottom: 20,
                 alignItems: 'center',
             }}>
+                <Grid xs={12} md={4}>
+                    <Avatar
+                        alt='Lucas Schvindt'
+                        src='src/assets/lucas.jpeg'
+                        sx={{
+                            "--Avatar-size": "200px",
+                        }}
+                    />
+                </Grid>
                 <Grid xs={12} md={8}>
                     <Typography
                         level='h1'
@@ -48,15 +57,6 @@ export default function HomePage() {
                             }}
                         >here</Link>.
                     </Typography>
-                </Grid>
-                <Grid xs={12} md={4}>
-                    <Avatar
-                        alt='Lucas Schvindt'
-                        src='src/assets/lucas.jpeg'
-                        sx={{
-                            "--Avatar-size": "200px",
-                        }}
-                    />
                 </Grid>
             </Grid>
         </motion.div>
