@@ -21,6 +21,7 @@ const Footer = () => {
                         <Link
                             component={RouterLink}
                             to={link.to}
+                            className={styles.socialLink}
                         >
                             {link.text}
                         </Link>

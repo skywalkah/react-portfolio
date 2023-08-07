@@ -1,4 +1,4 @@
-import { Link as RouterLink } from 'react-router-dom';
+import { Link as RouterLink, useLocation } from 'react-router-dom';
 import Box from '@mui/joy/Box';
 import Link from '@mui/joy/Link';
 import List from '@mui/joy/List';
@@ -7,22 +7,28 @@ import IconButton from '@mui/joy/IconButton';
 import ModeToggle from '../ModeToggle';
 import HomeIcon from '../Icons/HomeIcon';
 import MenuIcon from '../Icons/MenuIcon';
-import styles from './Navigation.module.css';
 import Menu from '@mui/joy/Menu';
 import MenuButton from '@mui/joy/MenuButton';
 import MenuItem from '@mui/joy/MenuItem';
 import Dropdown from '@mui/joy/Dropdown';
+import styles from './Navigation.module.css';
 
 function Navigation() {
+    const currentPage = useLocation().pathname;
+
     const links = [
         {to: '/about', text: 'About me'},
         {to: '/portfolio', text: 'Portfolio'},
         {to: '/contact', text: 'Contact'},
-        {to: '/resume', text: 'Resume'}
+        {to: '/resume', text: 'Resume', featured: true},
     ];
 
     return (
-        <Box component='nav' aria-label='My site' sx={{ flexGrow: 1 }} className={styles.navbar}>
+        <Box
+            component='nav'
+            sx={{ flexGrow: 1 }}
+            className={styles.navbar}
+        >
             <IconButton>
                 <Link
                     component={RouterLink}
@@ -39,6 +45,10 @@ function Navigation() {
                         <Link
                             component={RouterLink}
                             to={link.to}
+                            variant={'plain'}
+                            underline='hover'
+                            color='neutral'
+                            className={`${currentPage === link.to ? styles.active  : ''}`}
                         >
                             {link.text}
                         </Link>
@@ -52,7 +62,7 @@ function Navigation() {
                     <MenuIcon />
                 </MenuButton>
                 <Menu
-                    variant="plain">
+                    variant='plain'>
                     {links.map((link, index) => (
                         <MenuItem value={link.to} key={index}>
                             <Link

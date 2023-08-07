@@ -10,6 +10,7 @@
     background: none;
     box-shadow: none;
     padding: 5px 0 0;
+    color: var(--joy-palette-danger-500);
 }
 
 .formWrapper {

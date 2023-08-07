@@ -6,6 +6,15 @@
     justify-content: center;
 }
 
+.socialLink {
+    opacity: 0.5;
+    transition: all 0.2s ease;
+}
+
+.socialLink:hover{
+    opacity: 1;
+}
+
 [data-joy-color-scheme="dark"] .footer ul.socialLinks li a svg path {
     fill: #fff;
 }
