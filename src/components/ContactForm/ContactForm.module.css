@@ -1,0 +1,22 @@
+[data-joy-color-scheme="dark"] {
+    & .input {
+        background-color: #242c37;
+    }
+}
+
+[data-joy-color-scheme="dark"] .alert,
+[data-joy-color-scheme="light"] .alert {
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 5px 0 0;
+}
+
+.formWrapper {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.formItem {
+    margin-bottom: 15px;
+}

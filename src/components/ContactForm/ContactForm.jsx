@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Box from '@mui/joy/Box';
 import FormControl from '@mui/joy/FormControl';
 import FormLabel from '@mui/joy/FormLabel';
 import Input from '@mui/joy/Input';
@@ -9,6 +10,7 @@ import Modal from '@mui/joy/Modal';
 import ModalClose from '@mui/joy/ModalClose';
 import ModalDialog from '@mui/joy/ModalDialog';
 import Typography from '@mui/joy/Typography';
+import styles from './ContactForm.module.css';
 
 import { validateEmail } from '../../utils/helpers';
 
@@ -88,89 +90,98 @@ function ContactForm() {
     };
 
     return (
-        <>
-            <form className="form" onSubmit={handleFormSubmit}>
-                <FormControl>
+        <Box className={styles.formWrapper} >
+            <Typography>
+                If you want to get in touch with me, fill out the form below and I will be in touch soon!
+            </Typography>
+            <form onSubmit={handleFormSubmit}>
+                <FormControl className={styles.formItem}>
                     <FormLabel>Name</FormLabel>
                     <Input
-                        name="name"
+                        name='name'
                         value={name}
                         onChange={handleInputChange}
                         onBlur={handleInputBlur}
-                        type="text"
-                        placeholder="Name"
+                        type='text'
+                        placeholder='Name'
                         error={!!nameError}
+                        className={styles.input}
                     />
                     {nameError && (
                         <Alert
-                            size="sm"
-                            variant="plain"
-                            color="danger"
+                            size='sm'
+                            variant='plain'
+                            color='danger'
+                            className={styles.alert}
                         >
                             {nameError}
                         </Alert>
                     )}
                 </FormControl>
 
-                <FormControl>
+                <FormControl className={styles.formItem}>
                     <FormLabel>Email</FormLabel>
                     <Input
                         value={email}
                         onChange={handleInputChange}
                         onBlur={handleInputBlur}
-                        name="email"
-                        type="email"
-                        placeholder="johndoe@email.com"
+                        name='email'
+                        type='email'
+                        placeholder='johndoe@email.com'
                         error={!!emailError}
+                        className={styles.input}
                     />
                     {emailError && (
                         <Alert
-                            size="sm"
-                            variant="plain"
-                            color="danger"
+                            size='sm'
+                            variant='plain'
+                            color='danger'
+                            className={styles.alert}
                         >
                             {emailError}
                         </Alert>
                     )}
                 </FormControl>
 
-                <FormControl>
+                <FormControl className={styles.formItem}>
                     <FormLabel>Message</FormLabel>
                     <Textarea
                         value={message}
                         onChange={handleInputChange}
                         onBlur={handleInputBlur}
                         minRows={2}
-                        placeholder="Your message..."
+                        placeholder='Your message...'
                         error={!!messageError}
+                        className={styles.input}
                     />
                     {messageError && (
                         <Alert
-                            size="sm"
-                            variant="plain"
-                            color="danger"
+                            size='sm'
+                            variant='plain'
+                            color='danger'
+                            className={styles.alert}
                         >
                             {messageError}
                         </Alert>
                     )}
                 </FormControl>
 
-                <Button type="submit">Send it</Button>
+                <Button type='submit'>Send it</Button>
             </form>
             <Modal
-                variant="plain"
+                variant='plain'
                 open={open}
                 onClose={handleClose}
-                aria-labelledby="modal-title"
-                aria-describedby="modal-desc"
+                aria-labelledby='modal-title'
+                aria-describedby='modal-desc'
             >
                 <ModalDialog
-                    aria-labelledby="variant-modal-title"
-                    aria-describedby="variant-modal-description"
-                    variant="plain"
+                    aria-labelledby='variant-modal-title'
+                    aria-describedby='variant-modal-description'
+                    variant='plain'
                 >
                     <ModalClose
-                        variant="plain"
+                        variant='plain'
                         sx={{
                             top: 'calc(-1/4 * var(--IconButton-size))',
                             right: 'calc(-1/4 * var(--IconButton-size))',
@@ -180,21 +191,21 @@ function ContactForm() {
                         }}
                     />
                     <Typography
-                        component="h2"
-                        id="modal-title"
-                        level="h4"
-                        textColor="inherit"
-                        fontWeight="lg"
+                        component='h2'
+                        id='modal-title'
+                        level='h4'
+                        textColor='inherit'
+                        fontWeight='lg'
                         mb={1}
                     >
                         Message sent!
                     </Typography>
-                    <Typography id="modal-desc" textColor="text.tertiary">
+                    <Typography id='modal-desc' textColor='text.tertiary'>
                         Well... kinda. This is just a demo. But soon it will!
                     </Typography>
                 </ModalDialog>
             </Modal>
-        </>
+        </Box>
     );
 }
 

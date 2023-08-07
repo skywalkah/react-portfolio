@@ -9,9 +9,11 @@ function App() {
   return (
     <CssVarsProvider>
       <Header />
-      <AnimatePresence>
-        <Outlet />
-      </AnimatePresence>
+      <main>
+        <AnimatePresence>
+          <Outlet />
+        </AnimatePresence>
+      </main>
       <Footer />
     </CssVarsProvider>
   );

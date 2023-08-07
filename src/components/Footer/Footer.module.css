@@ -1,20 +1,9 @@
 .footer {
-    padding: 60px;
+    padding: 60px 0 20px;
 }
 
-.footer ul.socialLinks {
-    list-style-type: none;
-    margin: 0 0 30px;
-    padding: 0;
-}
-
-.footer ul.socialLinks li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.footer ul.socialLinks li:last-of-type {
-    margin-right: 0;
+.socialLinks {
+    justify-content: center;
 }
 
 [data-joy-color-scheme="dark"] .footer ul.socialLinks li a svg path {

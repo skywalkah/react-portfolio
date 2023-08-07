@@ -1,10 +1,11 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import { useColorScheme } from '@mui/joy/styles';
 import IconButton from '@mui/joy/IconButton';
 import LightModeIcon from '../icons/LightModeIcon';
 import DarkModeIcon from '../icons/DarkModeIcon'; 
 
-function ModeToggle() {
+function ModeToggle({ className }) {
     const { mode, setMode } = useColorScheme();
     const [mounted, setMounted] = React.useState(false);
 
@@ -20,7 +21,9 @@ function ModeToggle() {
 
     return (
         <IconButton
-            variant="plain"
+            variant='plain'
+            aria-label='Toggle light/dark mode'
+            className={className}
             onClick={() => {
                 setMode(mode === 'light' ? 'dark' : 'light');
             }}
@@ -29,5 +32,9 @@ function ModeToggle() {
         </IconButton>
     );
 }
+
+ModeToggle.propTypes = {
+    className: PropTypes.string,
+};
 
 export default ModeToggle;

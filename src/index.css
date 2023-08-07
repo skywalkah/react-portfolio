@@ -1,6 +1,24 @@
 :root {
- 
+  & .MuiTypography-h1 {
+    padding: 30px;
+  }
+  & .MuiTypography-body-md {
+    padding-bottom: 30px;
+  }
+  & .MuiLink-root {
+    color: var(--joy-palette-neutral-plainColor, var(--joy-palette-neutral-700, #32383E));
+    text-decoration: none;
+  }
 }
+
+body {
+  margin: 0;
+}
+
 [data-joy-color-scheme="dark"] body {
   background-color: #333;
+}
+
+h1 {
+  text-align: center;
 }

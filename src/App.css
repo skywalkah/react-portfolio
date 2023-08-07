@@ -1,6 +1,15 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0 2rem;
+}
+
+[data-joy-color-scheme="dark"] {
+  & body {
+    background-color: #1e202d;
+  }
+  & .MuiTypography-colorNeutral,
+  & p.MuiTypography-root {
+    color: #ddd;
+  }
 }

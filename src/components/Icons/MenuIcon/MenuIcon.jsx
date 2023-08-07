@@ -1,6 +1,8 @@
+import styles from './MenuIcon.module.css';
+
 const MenuIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-        <path stroke="#000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"/>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="24" height="24" viewBox="0 0 24 24" className={styles.menuIcon}>
+        <path stroke="#000" id="svg_1" d="m1.06253,3.94584l21.87495,0m-21.87495,8.10045l21.87495,0m-21.87495,8.10045l21.87495,0" strokeWidth="2" strokeLinejoin="round" strokeLinecap="round"/>
     </svg>
 );
 

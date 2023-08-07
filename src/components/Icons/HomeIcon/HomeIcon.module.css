@@ -1,0 +1,5 @@
+[data-joy-color-scheme="dark"] {
+    & .homeIcon path {
+        fill: #fff;
+    }
+}
