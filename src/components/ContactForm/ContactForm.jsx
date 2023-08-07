@@ -91,12 +91,16 @@ function ContactForm() {
 
     return (
         <Box className={styles.formWrapper} >
-            <Typography>
+            <Typography level="body-lg">
                 If you want to get in touch with me, fill out the form below and I will be in touch soon!
             </Typography>
             <form onSubmit={handleFormSubmit}>
                 <FormControl className={styles.formItem}>
-                    <FormLabel>Name</FormLabel>
+                    <FormLabel
+                        sx={{fontSize: 17, fontWeight: 400}}
+                    >
+                        Name
+                    </FormLabel>
                     <Input
                         name='name'
                         value={name}
@@ -120,7 +124,11 @@ function ContactForm() {
                 </FormControl>
 
                 <FormControl className={styles.formItem}>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel
+                        sx={{fontSize: 17, fontWeight: 400}}
+                    >
+                        Email
+                    </FormLabel>
                     <Input
                         value={email}
                         onChange={handleInputChange}
@@ -144,7 +152,11 @@ function ContactForm() {
                 </FormControl>
 
                 <FormControl className={styles.formItem}>
-                    <FormLabel>Message</FormLabel>
+                    <FormLabel
+                        sx={{fontSize: 17, fontWeight: 400}}
+                    >
+                        Message
+                    </FormLabel>
                     <Textarea
                         value={message}
                         onChange={handleInputChange}

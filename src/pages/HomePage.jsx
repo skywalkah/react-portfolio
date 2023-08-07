@@ -35,6 +35,7 @@ export default function HomePage() {
                         sx={{
                             fontSize: {xs: 50, sm: 60},
                             textAlign: 'left',
+                            marginBottom: 1,
                         }}
                     >
                         Hi, {"I'm"} Lucas.<br />

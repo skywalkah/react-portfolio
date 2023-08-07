@@ -13,6 +13,10 @@ export default function ContactPage() {
             <Typography
                 level="h1"
                 variant="plain"
+                sx={{
+                    fontSize: {xs: 30, sm: 50},
+                    marginBottom: 2
+                }}
             >
                 Contact me
             </Typography>

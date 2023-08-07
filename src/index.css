@@ -1,16 +1,14 @@
 :root { 
-  & .MuiTypography-body-md {
+  & .MuiTypography-body-md,
+  & .MuiTypography-body-lg {
     padding-bottom: 30px;
-  }
-  & .MuiLink-root {
-    border-radius: 5px;
   }
   & .MuiLink-root,
   & .MuiIconButton-root {
     transition: background-color 0.3s ease;
   }
-
   & .MuiButton-root {
+    border-radius: 5px;
     transition: background-color 0.3s ease;
     background-color: #FA4B00;
   }
