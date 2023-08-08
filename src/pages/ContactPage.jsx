@@ -14,8 +14,9 @@ export default function ContactPage() {
                 level="h1"
                 variant="plain"
                 sx={{
-                    fontSize: {xs: 30, sm: 50},
-                    marginBottom: 2
+                    fontSize: {xs: 40, sm: 50},
+                    mt: 6,
+                    mb: 2
                 }}
             >
                 Contact me

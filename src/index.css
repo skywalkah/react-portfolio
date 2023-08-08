@@ -1,6 +1,5 @@
 :root { 
-  & .MuiTypography-body-md,
-  & .MuiTypography-body-lg {
+  & .MuiTypography-body-md {
     padding-bottom: 30px;
   }
   & .MuiLink-root,

@@ -91,7 +91,7 @@ function ContactForm() {
 
     return (
         <Box className={styles.formWrapper} >
-            <Typography level="body-lg">
+            <Typography level="body-lg" sx={{pb:3}}>
                 If you want to get in touch with me, fill out the form below and I will be in touch soon!
             </Typography>
             <form onSubmit={handleFormSubmit}>

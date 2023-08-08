@@ -12,6 +12,11 @@ export default function ResumePage() {
             <Typography
                 level="h1"
                 variant="plain"
+                sx={{
+                    fontSize: {xs: 40, sm: 50},
+                    mt: 6,
+                    mb: 2
+                }}
             >
                 Resume
             </Typography>

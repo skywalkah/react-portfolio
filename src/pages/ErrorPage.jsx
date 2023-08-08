@@ -16,13 +16,18 @@ export default function ErrorPage() {
             <Typography
                 level="h1"
                 variant="plain"
+                sx={{
+                    fontSize: {xs: 40, sm: 50},
+                    mt: 6,
+                    mb: 2
+                }}
             >
                 Oops!
             </Typography>
-            <Typography>
+            <Typography sx={{textAlign:'center'}}>
                 Sorry, an unexpected error has occurred.
             </Typography>
-            <Typography>
+            <Typography sx={{textAlign:'center'}}>
                 Error: <b>{error.statusText || error.message}</b>
             </Typography>
         </motion.div>

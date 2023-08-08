@@ -38,10 +38,15 @@ export default function HomePage() {
                             marginBottom: 1,
                         }}
                     >
-                        Hi, {"I'm"} Lucas.<br />
+                        Hello, {"I'm"} Lucas.<br />
                         I build web things.
                     </Typography>
-                    <Typography level='body-lg'>
+                    <Typography
+                        level='body-lg'
+                        sx={{
+                            pb: 0,
+                        }}
+                    >
                         Checkout some of the things {"I've"} built <Link
                             component={RouterLink}
                             to={'/portfolio'}
