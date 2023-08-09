@@ -1,0 +1,5 @@
+[data-joy-color-scheme="dark"] {
+    & .dribbbleIcon path {
+        stroke: #fff;
+    }
+}
