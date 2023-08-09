@@ -71,7 +71,7 @@ export default function ResumePage() {
                     >
                         <ListItem nested>
                             <a 
-                                href="/src/assets/Lucas-Schvindt-Fullstack-Developer.pdf" 
+                                href="/Lucas-Schvindt-Fullstack-Developer.pdf" 
                                 download="Lucas-Schvindt-Fullstack-Developer.pdf"
                                 style={{ textDecoration: 'none', color: 'inherit' }}
                             >
