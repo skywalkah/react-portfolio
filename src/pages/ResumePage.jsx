@@ -5,7 +5,7 @@ import ListItem from '@mui/joy/ListItem';
 import ListItemButton, { listItemButtonClasses } from '@mui/joy/ListItemButton';
 import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
-import PDFicon from '../components/Icons/PDFicon';
+import PDFIcon from '../components/Icons/PDFIcon';
 import ArrowIcon from '../components/Icons/ArrowIcon';
 import { motion } from 'framer-motion';
 
@@ -75,7 +75,7 @@ export default function ResumePage() {
                                 download="Lucas-Schvindt-Fullstack-Developer.pdf"
                                 style={{ textDecoration: 'none', color: 'inherit' }}
                             >
-                                <ListItem component='div' startAction={<PDFicon />}>
+                                <ListItem component='div' startAction={<PDFIcon />}>
                                     <Typography level='body-lg' sx={{ textTransform: 'uppercase' }}>
                                         
                                             <ListItemButton style={{ borderLeftColor: 'transparent' }}>
