@@ -1,0 +1,5 @@
+[data-joy-color-scheme="dark"] {
+    & .arrowIcon path {
+        stroke: #fff;
+    }
+}
