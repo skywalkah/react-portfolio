@@ -22,7 +22,7 @@ export default function HomePage() {
                 <Grid xs={12} md={4}>
                     <Avatar
                         alt='Lucas Schvindt'
-                        src='src/assets/lucas.jpg'
+                        src='/lucas.jpg'
                         sx={{
                             "--Avatar-size": "200px",
                         }}
