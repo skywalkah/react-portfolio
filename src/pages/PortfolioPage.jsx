@@ -3,6 +3,7 @@ import Typography from '@mui/joy/Typography';
 import PortfolioItem from '../components/PortfolioItem/';
 import { motion } from 'framer-motion';
 import borrowhoodImg from '../assets/borrowhood.png';
+import choreBuddyImg from '../assets/chorebuddy.jpg';
 import recipePatchImg from '../assets/recipe-patch.png';
 import pwaTextEditorImg from '../assets/pwa-text-editor.png';
 import mvcBlogImg from '../assets/mvc-blog.png';
@@ -11,6 +12,7 @@ import passwordGeneratorImg from '../assets/password-generator.png';
 
 export default function PortfolioPage() {
     const portfolioItems = [
+        {title: 'choreBuddy', image: choreBuddyImg, repoLink: 'https://github.com/skywalkah/chore-buddy', webLink: 'https://chore-buddy-6e6d2559dc60.herokuapp.com/'},
         {title: 'BorrowHood', image: borrowhoodImg, repoLink: 'https://github.com/skywalkah/borrowhood', webLink: 'https://polar-beach-65067-18b2f94f915d.herokuapp.com/'},
         {title: 'Recipe Patch', image: recipePatchImg, repoLink: 'https://github.com/skywalkah/recipe-patch', webLink: 'https://skywalkah.github.io/recipe-patch/'},
         {title: 'PWA: Text Editor', image: pwaTextEditorImg, repoLink: 'https://github.com/skywalkah/PWA-text-editor', webLink: 'https://fast-hamlet-98043-b16aa05f192d.herokuapp.com/'},
